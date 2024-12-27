@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add jobs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <H1 style="text-align: center;">Add jobs Here</H1>
+    <form action="" method="post">
+        {% csrf_token %}
+       Company_Name : <input type="text" name="name" class="form-control"> 
+       Position : <input type="text" name="position" class="form-control">
+       Package : <input type="text" name="package" class="form-control"> 
+       Experiance : <input type="text" name="experiance" class="form-control"> 
+       Opnnings : <input type="text" name="opnnings" class="form-control"> 
+       Location : <input type="text" name="location" class="form-control"><br>
+       <button type="submit" class="btn btn-primary">Add Jobs</button> 
+    </div>
+    </form>
+</body>
+</html>

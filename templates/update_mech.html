@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update jobs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <H1 style="text-align: center;">UPDATE JOB</H1>
+    <form action="" method="post">
+        {% csrf_token %}
+       Company_Name : <input type="text" name="name" value="{{form.Company_Name}}" class="form-control"> 
+       Position : <input type="text" name="position" value="{{form.Position}}" class="form-control">
+       Package : <input type="text" name="package" value="{{form.Package}}" class="form-control"> 
+       Experiance : <input type="text" name="experiance" value="{{form.Experiance}}" class="form-control"> 
+       Opnnings : <input type="text" name="opnnings" value="{{form.Opnnings}}" class="form-control"> 
+       Location : <input type="text" name="location" value="{{form.Location}}" class="form-control"><br>
+       <button class="btn btn-warning" type="submit">UPDATE</button> 
+    </form>
+</div>
+</body>
+</html>

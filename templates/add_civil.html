@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add jobs</title>
+</head>
+<body>
+    <H1>Add Mech-jobs Here</H1>
+    <form action="" method="post">
+        {% csrf_token %}
+       Company_Name : <input type="text" name="name"> 
+       Position : <input type="text" name="position">
+       Package : <input type="text" name="package"> 
+       Experiance : <input type="text" name="experiance"> 
+       Opnnings : <input type="text" name="opnnings"> 
+       Location : <input type="text" name="location"><br>
+       <button type="submit">Add Jobs</button> 
+    </form>
+</body>
+</html>
