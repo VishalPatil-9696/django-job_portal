@@ -19,7 +19,7 @@ from job_portal_app import views
 from django.contrib.auth import views as auth_view
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
+    path('',views.home,name="home"),
     path('register/',views.register),
     path('index/',views.index),
     path('login/',auth_view.LoginView.as_view(template_name='login.html')),

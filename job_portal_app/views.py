@@ -18,7 +18,7 @@ def register(request):
             return redirect('/index/')
     return render(request,'register.html',{'form':data})
 
-@login_required(login_url='/home/')
+@login_required(login_url='home')
 def index(request):
     return render(request,'index.html')
 
@@ -35,7 +35,7 @@ def add(request):
         Location = request.POST['location']
         st = jobModel(Company_Name=Company_Name,Position=Position,Package=Package,Experiance=Experiance,Opnnings=Opnnings,Location=Location)
         st.save()
-        return redirect('/index/')
+        return redirect('/read/')
     return render(request,'add.html')
 
 def read(request):
